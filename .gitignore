@@ -5,3 +5,4 @@ plugins/
 # Ignore files that are created by ionic serve
 www/lib/
 www/css/
+www/js/
