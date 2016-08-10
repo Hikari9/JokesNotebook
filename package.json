@@ -1,7 +1,7 @@
 {
-  "name": "jokes",
+  "name": "jokes-notebook",
   "version": "1.1.1",
-  "description": "jokes: An Ionic project",
+  "description": "Anton's Jokes Notebook",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^2.0.4",
