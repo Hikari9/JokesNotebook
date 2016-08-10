@@ -3,10 +3,10 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sourcemaps = require('gulp-sourcemaps');
-
+var paths = require('./paths.js');
 
 gulp.task('scss', function(done) {
-  gulp.src('./src/scss/**/*.scss')
+  gulp.src(paths.scss)
     .pipe(sourcemaps.init())
     .pipe(sass())
     .on('error', sass.logError)
