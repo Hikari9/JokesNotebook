@@ -18,6 +18,6 @@ gulp.task('javascript', function(done) {
     }))
     .pipe(concat('bundle.min.js', {newLine: ';'}))
     .pipe(uglify())
-    .pipe(sourcemaps.write('./maps'))
+    .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('./www/js'));
 });

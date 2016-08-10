@@ -14,7 +14,7 @@ gulp.task('scss', function(done) {
       keepSpecialComments: 0
     }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(sourcemaps.write('/maps'))
+    .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('./www/css/'))
     .on('end', done);
 });
