@@ -16,8 +16,8 @@ gulp.task('javascript', function(done) {
       useStrict: true,
       trimCode: true,
     }))
-    .pipe(concat('bundle.min.js', {newLine: ';'}))
+    .pipe(concat('app.min.js', {newLine: ';'}))
     .pipe(uglify())
     .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('./www/js'));
+    .pipe(gulp.dest('./www'));
 });
