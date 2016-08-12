@@ -29,5 +29,7 @@
     "ionic-plugin-keyboard",
     "com.telerik.plugins.nativepagetransitions"
   ],
-  "cordovaPlatforms": []
+  "cordovaPlatforms": [
+    "android"
+  ]
 }
