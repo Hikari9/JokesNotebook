@@ -1,0 +1,7 @@
+# Ignore modules that can be installed
+node_modules/
+plugins/
+
+# Ignore files that are created by ionic serve
+www/maps/
+www/app.min.*
