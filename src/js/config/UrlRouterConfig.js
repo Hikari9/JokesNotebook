@@ -3,7 +3,7 @@ angular.module('jokes-notebook').config(
 function UrlRouterConfig($stateProvider, $urlRouterProvider) {
     
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/main/jokes');
+    $urlRouterProvider.otherwise('/main/empty');
     
     // list all states
     $stateProvider.state('main', {
@@ -11,22 +11,7 @@ function UrlRouterConfig($stateProvider, $urlRouterProvider) {
         abstract: true,
         templateUrl: 'html/main.menu.html',
         controller: 'MainMenuCtrl'
-    }).state('main.jokes', {
-        url: '/jokes',
-        views: {
-            content: {
-                templateUrl: 'html/main.jokes.html',
-                controller: 'MainJokesCtrl'
-            }
-        }
-    }).state('main.joke', {
-        url: '/joke?id',
-        views: {
-            content: {
-                templateUrl: 'html/main.joke.html',
-                controller: 'MainJokeCtrl'
-            }
-        }
+    }).state('main.empty', {
+        url: '/empty'
     });
-    
 });
